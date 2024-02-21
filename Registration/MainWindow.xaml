@@ -1,0 +1,38 @@
+﻿<Window x:Class="Registration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registration"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--Mesh-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--Login-->
+        <TextBlock Text="Login:" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="0" Grid.Column="2" Margin="2" />
+        <TextBox Name="loginInput" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" />
+
+        <!--Password-->
+        <TextBlock Text="Password:" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="2" Margin="2"/>
+        <PasswordBox Name="passInput" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120" />
+
+        <!--Buttons-->
+        <Button Content="Log in" Grid.Row="2" Grid.Column="2" Width="40" Height="50" Click="LogInEvent"/>
+        <Button Content="Registration" Grid.Row="2" Grid.Column="3" Width="70" Height="50" Click="RegistrationEvent"/>
+    </Grid>
+</Window>
