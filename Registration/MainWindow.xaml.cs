@@ -6,7 +6,7 @@ namespace Registration
 {
     public partial class MainWindow : Window
     {
-        private string path = "\\RegisteredUsers.json";
+        private string path = "bin\\Debug\\net8.0-windows\\RegisteredUsers.json";
 
         public MainWindow()
         {
@@ -17,10 +17,7 @@ namespace Registration
         {
             List<User> registeredUsers = new List<User>();
 
-            if (!File.Exists(path))
-            {
-                throw new FileNotFoundException();
-            }
+            if (!File.Exists(path)) throw new FileNotFoundException();
 
             string jsonString = File.ReadAllText(path);
             if (jsonString == string.Empty) return registeredUsers;
