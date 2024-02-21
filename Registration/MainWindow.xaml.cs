@@ -54,7 +54,25 @@ namespace Registration
                 MessageBox.Show(ex.Message);
             }
 
-            MessageBox.Show("You're logged in");
+            List<User> registeredUsers = new();
+            try
+            {
+                registeredUsers = LoadRegisteredUsers();
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+
+            bool isFind = false;
+            foreach (var item in registeredUsers)
+            {
+                if (item.Login == user.Login && item.Password == user.Password) isFind = true;
+            }
+
+            if (isFind) MessageBox.Show("You're logged in");
+            else MessageBox.Show("This user does not exists");
         }
 
         private void RegistrationEvent(object sender, RoutedEventArgs e)
