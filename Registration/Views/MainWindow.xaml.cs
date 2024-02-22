@@ -80,6 +80,7 @@ namespace Registration
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);
+                return;
             }
 
             if (isFind) MessageBox.Show("You're logged in");
