@@ -49,17 +49,6 @@ namespace Registration
                 return;
             }
 
-            User user = new();
-            try
-            {
-                user.Login = login;
-                user.Password = password;
-            }
-            catch (ArgumentException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
             List<User> registeredUsers = new();
             try
             {
@@ -74,11 +63,26 @@ namespace Registration
             bool isFind = false;
             foreach (var item in registeredUsers)
             {
-                if (item.Login == user.Login && item.Password == user.Password) isFind = true;
+                if (item.Login == login && item.Password == password) isFind = true;
+            }
+            if (!isFind)
+            {
+                MessageBox.Show("This user does not exists");
+                return;
+            }
+
+            User user = new();
+            try
+            {
+                user.Login = login;
+                user.Password = password;
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
             }
 
             if (isFind) MessageBox.Show("You're logged in");
-            else MessageBox.Show("This user does not exists");
         }
 
         private void RegistrationEvent(object sender, RoutedEventArgs e)
@@ -109,7 +113,6 @@ namespace Registration
                 registeredUsers.Add(user);
 
                 string jsonString = JsonSerializer.Serialize(registeredUsers);
-                MessageBox.Show(jsonString);
                 File.WriteAllText(path, jsonString);
 
                 MessageBox.Show("You have been successfuly registered!");
