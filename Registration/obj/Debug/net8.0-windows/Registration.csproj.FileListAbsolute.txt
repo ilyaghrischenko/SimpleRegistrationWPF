@@ -3,11 +3,9 @@ C:\github\SimpleRegistrationWPF\Registration\bin\Debug\net8.0-windows\Registrati
 C:\github\SimpleRegistrationWPF\Registration\bin\Debug\net8.0-windows\Registration.runtimeconfig.json
 C:\github\SimpleRegistrationWPF\Registration\bin\Debug\net8.0-windows\Registration.dll
 C:\github\SimpleRegistrationWPF\Registration\bin\Debug\net8.0-windows\Registration.pdb
-C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\App.g.cs
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Registration_MarkupCompile.cache
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Registration_MarkupCompile.lref
-C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\MainWindow.baml
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Registration.g.resources
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Registration.GeneratedMSBuildEditorConfig.editorconfig
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Registration.AssemblyInfoInputs.cache
@@ -19,3 +17,5 @@ C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\refint\Reg
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Registration.pdb
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Registration.genruntimeconfig.cache
 C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\ref\Registration.dll
+C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Views\MainWindow.g.cs
+C:\github\SimpleRegistrationWPF\Registration\obj\Debug\net8.0-windows\Views\MainWindow.baml

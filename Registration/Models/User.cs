@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Registration
+namespace Registration.Models
 {
     public class User
     {
