@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\github\\SimpleRegistrationWPF\\Registration\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAkwEoAAAAAAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T18:35:20.727Z",
               "EditorCaption": ""
@@ -46,8 +46,7 @@
               "ToolTip": "C:\\github\\SimpleRegistrationWPF\\Registration\\Views\\MainWindow.xaml",
               "RelativeToolTip": "Views\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-21T18:34:33.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-21T18:34:33.618Z"
             },
             {
               "$type": "Document",
@@ -57,7 +56,7 @@
               "RelativeDocumentMoniker": "Views\\MainWindow.xaml.cs",
               "ToolTip": "C:\\github\\SimpleRegistrationWPF\\Registration\\Views\\MainWindow.xaml.cs",
               "RelativeToolTip": "Views\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-21T18:34:30.469Z",
               "EditorCaption": ""

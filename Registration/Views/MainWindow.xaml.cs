@@ -43,6 +43,11 @@ namespace Registration
         {
             string login = loginInput.Text;
             string password = passInput.Password;
+            if (login == password)
+            {
+                MessageBox.Show("Error: Login and password can not be equal!");
+                return;
+            }
 
             User user = new();
             try
@@ -80,6 +85,11 @@ namespace Registration
         {
             string login = loginInput.Text;
             string password = passInput.Password;
+            if (login == password)
+            {
+                MessageBox.Show("Error: Login and password can not be equal!");
+                return;
+            }
 
             List<User> registeredUsers = new();
             try
