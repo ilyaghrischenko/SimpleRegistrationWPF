@@ -7,7 +7,7 @@ namespace Registration
 {
     public partial class MainWindow : Window
     {
-        private string path = "RegisteredUsers.json";
+        private string _path = "RegisteredUsers.json";
 
         public MainWindow()
         {
@@ -18,13 +18,13 @@ namespace Registration
         {
             List<User> registeredUsers = new List<User>();
 
-            if (!File.Exists(path))
+            if (!File.Exists(_path))
             {
-                File.Create(path);
+                File.Create(_path);
                 return registeredUsers;
             }
 
-            string jsonString = File.ReadAllText(path);
+            string jsonString = File.ReadAllText(_path);
             if (jsonString == string.Empty) return registeredUsers;
 
             try
@@ -85,7 +85,6 @@ namespace Registration
 
             if (isFind) MessageBox.Show("You're logged in");
         }
-
         private void RegistrationEvent(object sender, RoutedEventArgs e)
         {
             string login = loginInput.Text;
@@ -114,7 +113,7 @@ namespace Registration
                 registeredUsers.Add(user);
 
                 string jsonString = JsonSerializer.Serialize(registeredUsers);
-                File.WriteAllText(path, jsonString);
+                File.WriteAllText(_path, jsonString);
 
                 MessageBox.Show("You have been successfuly registered!");
             }

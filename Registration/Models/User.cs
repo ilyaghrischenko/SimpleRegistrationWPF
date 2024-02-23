@@ -36,8 +36,8 @@ namespace Registration.Models
                     if (char.IsUpper(item)) ++kilk_upper;
                 }
 
-                if (kilk_upper >= 1 && kilk_digits >= 2) _login = value;
-                else throw new ArgumentException("Error: Login must contain at least one uppercase letter and two digits");
+                if (kilk_upper >= 1 && kilk_digits >= 2 && value.Length >= 8) _login = value;
+                else throw new ArgumentException("Error: Login must contain at least one uppercase letter, two digits and must be at least 8 characters long");
             }
         }
 
@@ -57,8 +57,8 @@ namespace Registration.Models
                     if (char.IsUpper(item)) ++kilk_upper;
                 }
 
-                if (kilk_upper >= 1 && kilk_digits >= 2) _password = value;
-                else throw new ArgumentException("Error: Password must contain at least one uppercase letter and two digits");
+                if (kilk_upper >= 1 && kilk_digits >= 2 && value.Length >= 8) _password = value;
+                else throw new ArgumentException("Error: Password must contain at least one uppercase letter, two digits and must be at least 8 characters long");
             }
         }
 
